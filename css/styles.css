@@ -38,6 +38,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: capitalize;
 
   color: var(--site-nav-link-color);
 }
