@@ -1,29 +1,16 @@
 :root {
-  --font-color-main: #757575;
-  --font-color-title: #212121;
-  --color-primary: #2196f3;
-  --wrapper-width: 1170px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --primary-color: #2196f3;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--font-color-main);
-  border: 1px solid green;
+  color: var(--primary-text-color);
 }
 
-.page-header {
-  --background-color: #fff;
-  --header-height: 80px;
-
-  max-height: var(--header-height);
-  background-color: var(--background-color);
-
-  text-align: center;
+.list {
+  list-style: none;
 }
 
 .link {
@@ -41,9 +28,10 @@ body {
 }
 
 .logo > span {
-  color: var(--color-primary);
+  color: var(--primary-color);
 }
 
+/* Site navigation */
 .site-nav-link {
   --site-nav-link-color: #212121;
 
@@ -56,13 +44,21 @@ body {
 
 .site-nav-link:hover,
 .site-nav-link:focus {
-  color: var(--color-primary);
+  color: var(--primary-color);
 }
 
-.contacts .contacts-email {
-  color: var(--color-primary);
+.site-nav-link.current {
+  color: var(--primary-color);
 }
 
-.contacts .contacts-phone {
-  color: var(--font-color-main);
+/* Contacts navigation */
+.contacts-nav .contacts-nav-email,
+.contacts-nav .contacts-nav-phone {
+  color: inherit;
+}
+.contacts-nav .contacts-nav-email:hover,
+.contacts-nav .contacts-nav-email:focus,
+.contacts-nav .contacts-nav-phone:focus,
+.contacts-nav .contacts-nav-phone:hover {
+  color: var(--primary-color);
 }
