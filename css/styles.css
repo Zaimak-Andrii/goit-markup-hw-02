@@ -2,10 +2,12 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --primary-color: #2196f3;
+  --white-color: #ffffff;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
@@ -27,7 +29,7 @@ body {
   text-transform: capitalize;
 }
 
-.logo > span {
+.logo > .primary {
   color: var(--primary-color);
 }
 
@@ -53,10 +55,25 @@ body {
 }
 
 /* Contacts navigation */
-.contacts-nav .contacts-nav-email,
-.contacts-nav .contacts-nav-phone {
-  color: inherit;
+.contacts-nav {
+  font-style: normal;
 }
+
+.contacts-nav .contacts-nav-email,
+.contacts-nav .contacts-nav-phone,
+.contacts-nav .contacts-nav-address {
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.contacts-nav .contacts-nav-address {
+  color: var(--white-color);
+  /* Для відображення тексту */
+  background-color: yellowgreen;
+}
+
 .contacts-nav .contacts-nav-email:hover,
 .contacts-nav .contacts-nav-email:focus,
 .contacts-nav .contacts-nav-phone:focus,
