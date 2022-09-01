@@ -19,6 +19,10 @@ body {
   text-decoration: none;
 }
 
+.button {
+  font-family: inherit;
+}
+
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -77,6 +81,78 @@ body {
 .contacts-nav .contacts-nav-email:hover,
 .contacts-nav .contacts-nav-email:focus,
 .contacts-nav .contacts-nav-phone:focus,
-.contacts-nav .contacts-nav-phone:hover {
+.contacts-nav .contacts-nav-phone:hover,
+.contacts-nav .contacts-nav-address:hover,
+.contacts-nav .contacts-nav-address:focus {
   color: var(--primary-color);
 }
+
+/* Main for page Studio */
+.solutions .title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+
+  /* Для відображення тексту */
+  background-color: yellowgreen;
+}
+
+.solutions .button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+
+  background-color: var(--primary-color);
+}
+
+.section .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+/* Advantages */
+
+.advantages-list .advantages-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.advantages-list .advantages-item-text {
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--primary-text-color);
+}
+
+/* Our team */
+.team-list .team-item-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: var(--title-text-color);
+}
+
+.team-list .team-item-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: var(--primary-text-color);
+}
+
+/* Main for page Portfolio */
