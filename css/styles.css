@@ -5,6 +5,8 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --button-grey-color: #f5f4fa;
+  --contacts-grey-color: rgba(255, 255, 255, 0.6);
+  --bg-color-dark: #2f303a;
 }
 
 body {
@@ -40,6 +42,10 @@ body {
   text-transform: capitalize;
 }
 
+.logo.logo-white {
+  color: var(--white-color);
+}
+
 .logo > .primary {
   color: var(--primary-color);
 }
@@ -65,6 +71,9 @@ body {
   color: var(--primary-color);
 }
 
+footer {
+  background-color: var(--bg-color-dark);
+}
 /* Contacts navigation */
 .contacts-nav {
   font-style: normal;
@@ -79,10 +88,15 @@ body {
   line-height: 1.14;
 }
 
+.contacts-nav-email.grey,
+.contacts-nav-phone.grey {
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--contacts-grey-color);
+}
+
 .contacts-nav .contacts-nav-address {
   color: var(--white-color);
-  /* Для відображення тексту */
-  background-color: yellowgreen;
 }
 
 .contacts-nav .contacts-nav-email:hover,
@@ -95,6 +109,9 @@ body {
 }
 
 /* Main for page Studio */
+.solutions {
+  background-color: var(--bg-color-dark);
+}
 .solutions .title {
   font-weight: 900;
   font-size: 44px;
@@ -104,9 +121,6 @@ body {
   text-transform: uppercase;
 
   color: var(--white-color);
-
-  /* Для відображення тексту */
-  background-color: yellowgreen;
 }
 
 .solutions .button {
